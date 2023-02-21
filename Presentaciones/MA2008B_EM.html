@@ -418,6 +418,91 @@ d_A(x, y):=d(x, y) \quad \forall x, y \in A
 </ul>
 </div>
 <p>Un <strong>espacio normado</strong> es un espacio vectorial <span class="math inline">\(V\)</span> con una norma dada <span class="math inline">\(\|\cdot\|\)</span>. Lo denotaremos por <span class="math inline">\((V,\|\cdot\|)\)</span>, o simplemente por <span class="math inline">\(V\)</span> cuando no haga falta especificar su norma. La notación <span class="math inline">\(\mathcal N: V \rightarrow \mathbb{R}\)</span> también es usual para referirse a una norma</p>
+</section></section>
+<section>
+<section id="espacios-métricos-ii" class="title-slide slide level1 smaller center">
+<h1>Espacios Métricos II</h1>
+<p>Las métricos mos permiten definir la noción de <strong>cercanía</strong> entre los puntos de un conjunto</p>
+</section>
+<section id="conjuntos-abiertos-y-conjuntos-cerrados" class="slide level2 smaller">
+<h2>Conjuntos abiertos y conjuntos cerrados</h2>
+<p>Sea <span class="math inline">\(X=(X, d)\)</span> un espacio métrico y sea <span class="math inline">\(A\)</span> un subconjunto de <span class="math inline">\(X\)</span>.</p>
+<p>Definimos la bola abierta en <span class="math inline">\(X\)</span> con centro en <span class="math inline">\(x_0\)</span> y radio <span class="math inline">\(\varepsilon&gt;0\)</span> como</p>
+<p><span class="math display">\[
+B_X\left(x_0, \varepsilon\right):=\left\{x \in X: d\left(x, x_0\right)&lt;\varepsilon\right\}
+\]</span></p>
+<div class="def">
+<p>Un punto <span class="math inline">\(x \in X\)</span> se llama un <strong>punto interior de</strong> <span class="math inline">\(A\)</span> si existe <span class="math inline">\(\varepsilon&gt;0\)</span> tal que <span class="math inline">\(B_X(x, \varepsilon) \subset A\)</span>. El conjunto de todos los puntos interiores de <span class="math inline">\(A\)</span> se llama el <strong>interior de <span class="math inline">\(A\)</span> en <span class="math inline">\(X\)</span></strong> y se denota int <span class="math inline">\({ }_X(A), o\)</span> simplemente <span class="math inline">\(\operatorname{int}(A)\)</span>. Decimos que <span class="math inline">\(A\)</span> es <strong>abierto en</strong> <span class="math inline">\(X\)</span> si <span class="math inline">\(A=\operatorname{int}(A)\)</span>.</p>
+</div>
+<p>Observa que <span class="math inline">\(\operatorname{int}_X(A) \subset A\)</span>. Veamos que la bola abierta es un abierto en este sentido.</p>
+<p><strong>Ejemplos</strong></p>
+</section>
+<section id="resultados" class="slide level2 smaller">
+<h2>Resultados</h2>
+<div class="def">
+<p>En cualquier espacio métrico <span class="math inline">\(X=(X, d)\)</span>, la bola abierta <span class="math display">\[
+B_X\left(x_0, \varepsilon\right):=\left\{x \in X: d\left(x, x_0\right)&lt;\varepsilon\right\}
+\]</span> con centro en <span class="math inline">\(x_0\)</span> y radio <span class="math inline">\(\varepsilon\)</span> es un subconjunto abierto de <span class="math inline">\(X\)</span>.</p>
+</div>
+<p><br></p>
+<div class="def">
+<p>El interior <span class="math inline">\(\operatorname{int}(A)\)</span> de cualquier subconjunto <span class="math inline">\(A\)</span> de <span class="math inline">\(X\)</span> es abierto en <span class="math inline">\(X\)</span></p>
+</div>
+<p><br> <strong>El que un subconjunto <span class="math inline">\(A\)</span> de <span class="math inline">\(X\)</span> sea abierto en <span class="math inline">\(X\)</span> o no lo sea depende de la métrica que le demos a <span class="math inline">\(X\)</span></strong></p>
+</section>
+<section id="definiciones" class="slide level2 smaller">
+<h2>Definiciones</h2>
+<div class="def">
+<p>Un punto <span class="math inline">\(x \in X\)</span> se llama un <strong>punto de contacto</strong> de <span class="math inline">\(A\)</span> si <span class="math inline">\(B_X(x, \varepsilon) \cap A \neq \emptyset\)</span> para toda <span class="math inline">\(\varepsilon&gt;0\)</span>. El conjunto de todos los puntos de contacto de <span class="math inline">\(A\)</span> se llama la <strong>cerradura de</strong> <span class="math inline">\(A\)</span> en <span class="math inline">\(X\)</span> y se denota <span class="math inline">\(\operatorname{cerr}_X(A)\)</span>, o simplemente <span class="math inline">\(\bar{A}\)</span>. Decimos que <span class="math inline">\(A\)</span> es <strong>cerrado en</strong> <span class="math inline">\(X\)</span> si <span class="math inline">\(A=\bar{A}\)</span>.</p>
+</div>
+<p><strong>Nota que todo punto de <span class="math inline">\(A\)</span> es punto de contacto de <span class="math inline">\(A\)</span>, es decir, <span class="math inline">\(A \subset \bar{A}\)</span>.</strong></p>
+<div class="def">
+<p>La <strong>bola cerrada</strong> en <span class="math inline">\(X\)</span> con centro en <span class="math inline">\(x_0\)</span> y radio <span class="math inline">\(\varepsilon\)</span> es el conjunto <span class="math display">\[
+\bar{B}_X\left(x_0, \varepsilon\right):=\left\{x \in X: d\left(x, x_0\right) \leq \varepsilon\right\} .
+\]</span></p>
+</div>
+</section>
+<section id="proposiciones" class="slide level2 smaller">
+<h2>Proposiciones</h2>
+<div class="def">
+<p><span class="math inline">\(\bar{B}_X\left(x_0, \varepsilon\right)\)</span> es un subconjunto cerrado de <span class="math inline">\(X\)</span>.</p>
+</div>
+<p>Denotaremos por <span class="math inline">\(X \backslash A\)</span> al complemento de <span class="math inline">\(A\)</span> en <span class="math inline">\(X\)</span>, es decir, <span class="math display">\[
+X \backslash A:=\{x \in X: x \notin A\}
+\]</span> Los abiertos y los cerrados son duales en el siguiente sentido.</p>
+<div class="def">
+<p>Para cualquier subconjunto <span class="math inline">\(A\)</span> de un espacio métrico <span class="math inline">\(X\)</span> se cumple que <span class="math display">\[
+X \backslash \bar{A}=\operatorname{int}(X \backslash A)
+\]</span> <span class="math inline">\(A\)</span> es cerrado en <span class="math inline">\(X\)</span> si y sólo si <span class="math inline">\(X \backslash A\)</span> es abierto en <span class="math inline">\(X\)</span>.</p>
+</div>
+<div class="def">
+<p>La cerradura <span class="math inline">\(\bar{A }\)</span> cualquier subconjunto <span class="math inline">\(A\)</span> de <span class="math inline">\(X\)</span> es cerrada en <span class="math inline">\(X\)</span></p>
+</div>
+</section>
+<section id="nota" class="slide level2">
+<h2>Nota</h2>
+<p>Existen subconjuntos que no son ni abiertos ni cerrados. Por ejemplo, el intervalo <span class="math inline">\([a,b)\)</span> no es ni abierto ni cerrado en <span class="math inline">\(\mathbb{R}\)</span> con la métrica usual. Más aún, un subconjunto puede ser simultáneamente abierto y cerrado.</p>
+</section>
+<section id="topología-por-medio-de-métrica" class="slide level2 smaller">
+<h2>Topología por medio de métrica</h2>
+<div class="def">
+<p>En cualquier espacio métrico <span class="math inline">\(X=(X, d)\)</span> se cumple lo siguiente:</p>
+<ul>
+<li><ol type="a">
+<li>El conjunto vacío <span class="math inline">\(\emptyset\)</span> es abierto en <span class="math inline">\(X\)</span>.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li><span class="math inline">\(X\)</span> es abierto en <span class="math inline">\(X\)</span>.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>La unión <span class="math inline">\(\bigcup_{i \in I} U_i\)</span> de cualquier familia <span class="math inline">\(\left\{U_i: i \in \mathcal{I}\right\}\)</span> de subconjuntos abiertos de <span class="math inline">\(X\)</span> es abierta en <span class="math inline">\(X\)</span>.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>La intersección <span class="math inline">\(U \cap V\)</span> de dos subconjuntos abiertos <span class="math inline">\(U\)</span> y <span class="math inline">\(V\)</span> de <span class="math inline">\(X\)</span> es abierta en <span class="math inline">\(X\)</span>.</li>
+</ol></li>
+</ul>
+</div>
+<p>Las propiedades (a)-(d) se usan como definición de los abiertos de un espacio topológico. Como la continuidad se puede caracterizar en términos de abiertos (veremos), los espacios topológicos son el ámbito natural para estudiar la continuidad.</p>
 
 <img src="./imagenes/logoazul.png" class="slide-logo r-stretch"><div class="footer footer-default">
 <p><a href=""></a></p>

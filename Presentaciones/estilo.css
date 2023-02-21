@@ -1,0 +1,24 @@
+.def {	
+    border-style:solid;
+    border-width:2px;
+    /*-webkit-border-radius:15px;*/
+    border-radius: 0.5em;
+    border-color:rgba(0,57,166,1);/**  #366272;#CD853F;/**rgba(112, 156, 169, 0.66);*/
+    /*background: #366272;rgba(54, 98, 114, 0.9);/*#366272;*/
+	/*border-top-left-radius:10%;*/
+	color:black;
+	font-size: 0.6em;
+	/*box-shadow: 10px 10px 10px #2178a3;*/
+	/*overflow:scroll;*/
+	padding: 0.5% 0.5% 0.5% 2%;
+	box-sizing: border-box;
+	width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:0.1%;
+    margin-top:0.1%; 
+    font-size: 1.0em;
+	line-height: 1.6;
+	font-weight: 300;
+  /*background:rgba(0,57,166,0.1);/*1(0.40000000596046448, 0.7607843279838562, 0.64705884456634521)*/
+}
