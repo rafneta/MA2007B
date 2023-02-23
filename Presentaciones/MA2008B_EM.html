@@ -434,8 +434,7 @@ B_X\left(x_0, \varepsilon\right):=\left\{x \in X: d\left(x, x_0\right)&lt;\varep
 <div class="def">
 <p>Un punto <span class="math inline">\(x \in X\)</span> se llama un <strong>punto interior de</strong> <span class="math inline">\(A\)</span> si existe <span class="math inline">\(\varepsilon&gt;0\)</span> tal que <span class="math inline">\(B_X(x, \varepsilon) \subset A\)</span>. El conjunto de todos los puntos interiores de <span class="math inline">\(A\)</span> se llama el <strong>interior de <span class="math inline">\(A\)</span> en <span class="math inline">\(X\)</span></strong> y se denota int <span class="math inline">\({ }_X(A), o\)</span> simplemente <span class="math inline">\(\operatorname{int}(A)\)</span>. Decimos que <span class="math inline">\(A\)</span> es <strong>abierto en</strong> <span class="math inline">\(X\)</span> si <span class="math inline">\(A=\operatorname{int}(A)\)</span>.</p>
 </div>
-<p>Observa que <span class="math inline">\(\operatorname{int}_X(A) \subset A\)</span>. Veamos que la bola abierta es un abierto en este sentido.</p>
-<p><strong>Ejemplos</strong></p>
+<p><strong>Observa que <span class="math inline">\(\operatorname{int}_X(A) \subset A\)</span></strong>. <em>Ejemplos</em></p>
 </section>
 <section id="resultados" class="slide level2 smaller">
 <h2>Resultados</h2>
@@ -449,6 +448,27 @@ B_X\left(x_0, \varepsilon\right):=\left\{x \in X: d\left(x, x_0\right)&lt;\varep
 <p>El interior <span class="math inline">\(\operatorname{int}(A)\)</span> de cualquier subconjunto <span class="math inline">\(A\)</span> de <span class="math inline">\(X\)</span> es abierto en <span class="math inline">\(X\)</span></p>
 </div>
 <p><br> <strong>El que un subconjunto <span class="math inline">\(A\)</span> de <span class="math inline">\(X\)</span> sea abierto en <span class="math inline">\(X\)</span> o no lo sea depende de la métrica que le demos a <span class="math inline">\(X\)</span></strong></p>
+</section>
+<section id="topología-por-medio-de-métrica" class="slide level2 smaller">
+<h2>Topología por medio de métrica</h2>
+<div class="def">
+<p>En cualquier espacio métrico <span class="math inline">\(X=(X, d)\)</span> se cumple lo siguiente:</p>
+<ul>
+<li><ol type="a">
+<li>El conjunto vacío <span class="math inline">\(\emptyset\)</span> es abierto en <span class="math inline">\(X\)</span>.</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li><span class="math inline">\(X\)</span> es abierto en <span class="math inline">\(X\)</span>.</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>La unión <span class="math inline">\(\bigcup_{i \in I} A_i\)</span> de cualquier familia <span class="math inline">\(\left\{A_i: i \in \mathcal{I}\right\}\)</span> de subconjuntos abiertos de <span class="math inline">\(X\)</span> es abierta en <span class="math inline">\(X\)</span>.</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>La intersección <span class="math inline">\(U \cap V\)</span> de dos subconjuntos abiertos <span class="math inline">\(U\)</span> y <span class="math inline">\(V\)</span> de <span class="math inline">\(X\)</span> es abierta en <span class="math inline">\(X\)</span>.</li>
+</ol></li>
+</ul>
+</div>
+<p>Las propiedades (a)-(d) se usan como definición de los abiertos de un espacio topológico. Como la continuidad se puede caracterizar en términos de abiertos (veremos), los espacios topológicos son el ámbito natural para estudiar la continuidad.</p>
 </section>
 <section id="definiciones" class="slide level2 smaller">
 <h2>Definiciones</h2>
@@ -482,27 +502,6 @@ X \backslash \bar{A}=\operatorname{int}(X \backslash A)
 <section id="nota" class="slide level2">
 <h2>Nota</h2>
 <p>Existen subconjuntos que no son ni abiertos ni cerrados. Por ejemplo, el intervalo <span class="math inline">\([a,b)\)</span> no es ni abierto ni cerrado en <span class="math inline">\(\mathbb{R}\)</span> con la métrica usual. Más aún, un subconjunto puede ser simultáneamente abierto y cerrado.</p>
-</section>
-<section id="topología-por-medio-de-métrica" class="slide level2 smaller">
-<h2>Topología por medio de métrica</h2>
-<div class="def">
-<p>En cualquier espacio métrico <span class="math inline">\(X=(X, d)\)</span> se cumple lo siguiente:</p>
-<ul>
-<li><ol type="a">
-<li>El conjunto vacío <span class="math inline">\(\emptyset\)</span> es abierto en <span class="math inline">\(X\)</span>.</li>
-</ol></li>
-<li><ol start="2" type="a">
-<li><span class="math inline">\(X\)</span> es abierto en <span class="math inline">\(X\)</span>.</li>
-</ol></li>
-<li><ol start="3" type="a">
-<li>La unión <span class="math inline">\(\bigcup_{i \in I} U_i\)</span> de cualquier familia <span class="math inline">\(\left\{U_i: i \in \mathcal{I}\right\}\)</span> de subconjuntos abiertos de <span class="math inline">\(X\)</span> es abierta en <span class="math inline">\(X\)</span>.</li>
-</ol></li>
-<li><ol start="4" type="a">
-<li>La intersección <span class="math inline">\(U \cap V\)</span> de dos subconjuntos abiertos <span class="math inline">\(U\)</span> y <span class="math inline">\(V\)</span> de <span class="math inline">\(X\)</span> es abierta en <span class="math inline">\(X\)</span>.</li>
-</ol></li>
-</ul>
-</div>
-<p>Las propiedades (a)-(d) se usan como definición de los abiertos de un espacio topológico. Como la continuidad se puede caracterizar en términos de abiertos (veremos), los espacios topológicos son el ámbito natural para estudiar la continuidad.</p>
 
 <img src="./imagenes/logoazul.png" class="slide-logo r-stretch"><div class="footer footer-default">
 <p><a href=""></a></p>
