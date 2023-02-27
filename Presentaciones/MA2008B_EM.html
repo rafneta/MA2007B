@@ -502,6 +502,66 @@ X \backslash \bar{A}=\operatorname{int}(X \backslash A)
 <section id="nota" class="slide level2">
 <h2>Nota</h2>
 <p>Existen subconjuntos que no son ni abiertos ni cerrados. Por ejemplo, el intervalo <span class="math inline">\([a,b)\)</span> no es ni abierto ni cerrado en <span class="math inline">\(\mathbb{R}\)</span> con la métrica usual. Más aún, un subconjunto puede ser simultáneamente abierto y cerrado.</p>
+</section>
+<section id="definiciones-en-mathbbrn" class="slide level2 smaller">
+<h2>Definiciones en <span class="math inline">\(\mathbb{R}^n\)</span></h2>
+<h3 class="smaller" id="bola-abierta">Bola abierta</h3>
+<div class="def">
+<p>Sean <span class="math inline">\(\vec{x}_0 \in \mathbb{R}^n\)</span> y <span class="math inline">\(\varepsilon&gt;0\)</span>. Se define la bola abierta de <span class="math inline">\(\mathbb{R}^n\)</span> con centro en <span class="math inline">\(\vec{x}_0\)</span> y radio <span class="math inline">\(\varepsilon\)</span> por: <span class="math display">\[
+B\left(\vec{x}_0, \varepsilon\right)=V_{\varepsilon}\left(\vec{x}_0\right)=\left\{\vec{x} \in \mathbb{R}^n \mid\left\|\vec{x}-\vec{x}_0\right\|&lt;\varepsilon\right\}
+\]</span></p>
+</div>
+<h3 class="smaller" id="bola-cerrada">Bola cerrada</h3>
+<div class="def">
+<p>Sean <span class="math inline">\(\vec{x}_0 \in \mathbb{R}^n\)</span> y <span class="math inline">\(\varepsilon&gt;0\)</span>. Se define la bola cerrada en <span class="math inline">\(\mathbb{R}^n\)</span> con centro en <span class="math inline">\(\vec{x}_0\)</span> y radio <span class="math inline">\(\varepsilon&gt;0\)</span> por: <span class="math display">\[
+\bar{B}\left(\vec{x}_0, \varepsilon\right)=\left\{\vec{y} \in \mathbb{R}^n \mid\left\|\vec{x}_0-\vec{y}\right\| \leq \varepsilon\right\} .
+\]</span></p>
+</div>
+</section>
+<section id="section" class="slide level2 smaller">
+<h2></h2>
+<h3 class="smaller" id="interior">Interior</h3>
+<div class="def">
+<p>Sea <span class="math inline">\(A \subseteq \mathbb{R}^n\)</span> y sea <span class="math inline">\(\vec{x}_0 \in A\)</span>. Entonces <span class="math inline">\(\vec{x}_0\)</span> se llama punto interior de <span class="math inline">\(A\)</span> si existe <span class="math inline">\(\varepsilon&gt;0\)</span> tal que <span class="math inline">\(B\left(\vec{x}_0, \varepsilon\right) \subseteq A\)</span>.</p>
+</div>
+<p>Así mismo definimos el interior de <span class="math inline">\(A\)</span> por: <span class="math inline">\(\operatorname{int}(A)\)</span> interior de <span class="math inline">\(A=\{\vec{x} \in A \mid \vec{x}\)</span> es punto interior de <span class="math inline">\(A\}\)</span>.</p>
+<h3 class="smaller" id="vecindad">Vecindad</h3>
+<div class="def">
+<p>Sea <span class="math inline">\(\vec{x}_0 \in \mathbb{R}^n\)</span>, Una vecindad de <span class="math inline">\(\vec{x}_0\)</span> es un conjunto <span class="math inline">\(V\)</span> que contiene a otro conjunto abierto <span class="math inline">\(U\)</span> tal que <span class="math inline">\(\vec{x}_0 \in U\)</span>, es decir, <span class="math inline">\(\vec{x}_0 \in U \subseteq V\)</span> y <span class="math inline">\(U\)</span> es un conjunto abierto.</p>
+</div>
+<p>Si <span class="math inline">\(V\)</span> es un conjunto abierto y <span class="math inline">\(\vec{x}_0 \in V, V\)</span> se llama vecindad abierta.</p>
+</section>
+<section id="section-1" class="slide level2 smaller">
+<h2></h2>
+<h3 class="smaller" id="punto-de-acumulación">Punto de acumulación</h3>
+<div class="def">
+<p>Sea <span class="math inline">\(A \subseteq \mathbb{R}^n\)</span>. Un punto <span class="math inline">\(\vec{x} \in \mathbb{R}^n\)</span> se llama punto de acumulación de <span class="math inline">\(A\)</span> si para toda <span class="math inline">\(\varepsilon&gt;0,[B(\vec{x}, \varepsilon) \cap A] \backslash\{\vec{x}\} \neq \emptyset\)</span>, es decir si toda bola con centro en <span class="math inline">\(\vec{x}\)</span> tiene algún punto de <span class="math inline">\(A\)</span> distinto de <span class="math inline">\(\vec{x}\)</span> mismo.</p>
+</div>
+<p>Ponemos: <span class="math inline">\(A^{\prime}=\left\{\vec{x} \in \mathbb{R}^n \mid x\right.\)</span> es punto de acumulación de <span class="math inline">\(\left.A\right\}\)</span>. El conjuto <span class="math inline">\(A^{\prime}\)</span> recibe el nombre de conjunto derivado de <span class="math inline">\(A\)</span>.</p>
+<h3 class="smaller" id="punto-de-adherencia">Punto de adherencia</h3>
+<div class="def">
+<p>Sea <span class="math inline">\(A \subseteq \mathbb{R}^n\)</span>. Un punto <span class="math inline">\(\vec{x}_0 \in \mathbb{R}^n\)</span> se llama punto de adherencia (o contacto) de <span class="math inline">\(A\)</span> si para toda <span class="math inline">\(\varepsilon&gt;0, B\left(\vec{x}_0, \varepsilon\right) \cap A \neq \emptyset\)</span>.</p>
+</div>
+<p>Ponemos: <span class="math inline">\(\bar{A}=\left\{\vec{x} \in \mathbb{R}^n \mid \vec{x}\right.\)</span> es punto de adherencia de <span class="math inline">\(\left.A\right\}\)</span> y <span class="math inline">\(\bar{A}\)</span> recibe el nombre de adherencia de A ó cerradura de <span class="math inline">\(A\)</span>.</p>
+</section>
+<section id="section-2" class="slide level2 smaller">
+<h2></h2>
+<h3 class="smaller" id="punto-aislado">Punto aislado</h3>
+<div class="def">
+<p>Dado <span class="math inline">\(A \subseteq \mathbb{R}^n\)</span>, un punto <span class="math inline">\(\vec{x} \in A\)</span> tal que <span class="math inline">\(\vec{x} \notin A^{\prime}\)</span>, es decir, existe <span class="math inline">\(\varepsilon&gt;0\)</span> tal que <span class="math inline">\(B(\vec{x}, \varepsilon) \cap A=\{\vec{x}\}\)</span>, se llama punto aislado de <span class="math inline">\(A\)</span>.</p>
+</div>
+<h3 class="smaller" id="punto-frontera">Punto frontera</h3>
+<div class="def">
+<p>Sea <span class="math inline">\(A \subseteq \mathbb{R}^n, \vec{x} \in \mathbb{R}^n\)</span> se llama punto frontera de <span class="math inline">\(A\)</span> si para toda <span class="math inline">\(\varepsilon&gt;0, B(\vec{x}, \varepsilon) \cap A \neq \emptyset\)</span> y <span class="math inline">\(B(\vec{x}, \varepsilon) \cap \mathcal{C} A \neq \emptyset\)</span></p>
+</div>
+<p>Ponemos <span class="math inline">\(\partial A=\operatorname{Fr} A=\left\{\vec{x} \in \mathbb{R}^n \mid \vec{x}\right.\)</span> es punto frontera de <span class="math inline">\(\left.A\right\}\)</span>. El conjunto <span class="math inline">\(\partial A=\operatorname{Fr} A\)</span> recibe el nombre de frontera de <span class="math inline">\(A\)</span>.</p>
+</section>
+<section id="section-3" class="slide level2 smaller">
+<h2></h2>
+<h3 class="smaller" id="exterior">Exterior</h3>
+<div class="def">
+<p>Al conjunto: <span class="math inline">\(\operatorname{Ext} A=\stackrel{\circ}{\widehat{C A}}\)</span> se le llama el exterior de <span class="math inline">\(A\)</span>, <span class="math inline">\(A \subseteq \mathbb{R}^n\)</span></p>
+</div>
 
 <img src="./imagenes/logoazul.png" class="slide-logo r-stretch"><div class="footer footer-default">
 <p><a href=""></a></p>
