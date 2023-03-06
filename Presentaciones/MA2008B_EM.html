@@ -562,6 +562,59 @@ B\left(\vec{x}_0, \varepsilon\right)=V_{\varepsilon}\left(\vec{x}_0\right)=\left
 <div class="def">
 <p>Al conjunto: <span class="math inline">\(\operatorname{Ext} A=\stackrel{\circ}{\widehat{C A}}\)</span> se le llama el exterior de <span class="math inline">\(A\)</span>, <span class="math inline">\(A \subseteq \mathbb{R}^n\)</span></p>
 </div>
+</section></section>
+<section>
+<section id="continuidad" class="title-slide slide level1 smaller center">
+<h1>Continuidad</h1>
+<p>La continuidad da la idea de <em>cercanía</em>. La definición queda establecida por lo menos en un <strong>espacio métrico</strong>, pero en general la continuidad se definide en un <strong>espacio topológico</strong>.</p>
+</section>
+<section id="continuidad-en-espacio-métricos" class="slide level2 smaller">
+<h2>Continuidad en espacio métricos</h2>
+<p>Sean <span class="math inline">\(X=\left(X, d_X\right)\)</span> y <span class="math inline">\(Y=\left(Y, d_Y\right)\)</span> espacios métricos.</p>
+<div class="def">
+<p>Una función <span class="math inline">\(\phi: X \rightarrow Y\)</span> es continua en el punto <span class="math inline">\(x_0 \in X\)</span> si, para cada <span class="math inline">\(\varepsilon&gt;0\)</span>, existe <span class="math inline">\(\delta&gt;0\)</span> (que depende de <span class="math inline">\(x_0\)</span> y de <span class="math inline">\(\varepsilon\)</span> ) tal que <span class="math display">\[
+d_Y\left(\phi(x), \phi\left(x_0\right)\right)&lt;\varepsilon \quad \text { si } d_X\left(x, x_0\right)&lt;\delta
+\]</span></p>
+</div>
+<p>Decimos que <span class="math inline">\(\phi\)</span> es continua si lo es en todo punto de <span class="math inline">\(X\)</span>.</p>
+<p>La continuidad de <span class="math inline">\(\phi\)</span> depende de las métricas que estamos considerando en <span class="math inline">\(X\)</span> y <span class="math inline">\(Y\)</span>.</p>
+</section>
+<section id="homeomorfismos" class="slide level2 smaller">
+<h2>Homeomorfismos</h2>
+<div class="def">
+<p>Una función <span class="math inline">\(\phi: X \rightarrow Y\)</span> es un homeomorfismo si <span class="math inline">\(\phi\)</span> es continua y biyectiva y su inversa <span class="math inline">\(\phi^{-1}: Y \rightarrow X\)</span> es continua.</p>
+</div>
+<p>Se dice que <span class="math inline">\(X\)</span> y <span class="math inline">\(Y\)</span> son homeomorfos si existe un homeomorfismo entre ellos.</p>
+</section>
+<section id="resultados-1" class="slide level2 smaller">
+<h2>Resultados</h2>
+<p>Sean <span class="math inline">\(\phi: X \rightarrow Y\)</span> y <span class="math inline">\(\psi: Y \rightarrow Z\)</span> funciones entre espacios métricos.</p>
+<ul>
+<li>Si <span class="math inline">\(\phi\)</span> y <span class="math inline">\(\psi\)</span> son continuas entonces la composición <span class="math inline">\(\psi \circ \phi: X \rightarrow Z\)</span> es continua.</li>
+<li>Si <span class="math inline">\(\phi\)</span> es un homeomorfismo, entonces <span class="math inline">\(\psi\)</span> es continua si y sólo si <span class="math inline">\(\psi \circ \phi\)</span> es continua.</li>
+<li>Si <span class="math inline">\(\psi\)</span> es un homeomorfismo, entonces <span class="math inline">\(\phi\)</span> es continua si y sólo si <span class="math inline">\(\psi \circ \phi\)</span> es continua.</li>
+</ul>
+</section>
+<section id="continuidad-diferentes-formas" class="slide level2 smaller">
+<h2>Continuidad (diferentes formas)</h2>
+<p>Sean <span class="math inline">\(X\)</span> y <span class="math inline">\(Y\)</span> espacios métricos, y sea <span class="math inline">\(\phi: X \rightarrow Y\)</span> una función. Las siguientes afirmaciones son equivalentes:</p>
+<ol type="a">
+<li><span class="math inline">\(\phi: X \rightarrow Y\)</span> es continua.</li>
+<li><span class="math inline">\(\phi^{-1}(U)\)</span> es abierto en <span class="math inline">\(X\)</span> para todo subconjunto abierto <span class="math inline">\(U\)</span> de <span class="math inline">\(Y\)</span>.</li>
+<li><span class="math inline">\(\phi^{-1}(C)\)</span> es cerrado en <span class="math inline">\(X\)</span> para todo subconjunto cerrado <span class="math inline">\(C\)</span> de <span class="math inline">\(Y\)</span>.</li>
+</ol>
+</section>
+<section id="continuidad-en-espacios-topológicos" class="slide level2 smaller">
+<h2>Continuidad en espacios topológicos</h2>
+<div class="def">
+<p>Sean <span class="math inline">\(\left(X, \mathscr{T}_X\right),\left(Y, \mathscr{T}_Y\right)\)</span> espacios topológicos, y <span class="math inline">\(f: X \rightarrow\)</span> <span class="math inline">\(Y\)</span>, diremos que <span class="math inline">\(f\)</span> es continua, si <span class="math inline">\(f^{-1}(U) \in \mathscr{T}_X \quad\)</span> para cada <span class="math inline">\(U \in \mathscr{T}_Y\)</span>.</p>
+</div>
+<br>
+<div class="def">
+<p>Sean <span class="math inline">\(\left(X, \mathscr{T}_X\right),\left(Y, \mathscr{T}_Y\right)\)</span> espacios topológicos, y <span class="math inline">\(f: X \rightarrow Y\)</span>. Se dice que <span class="math inline">\(f\)</span> es un homeomorfismo si <span class="math inline">\(f\)</span> es continua, biyectiva y con inversa continua. Si existe <span class="math inline">\(f\)</span> un homeomorfismo <span class="math inline">\(f\)</span> entre <span class="math inline">\(X y Y\)</span>, diremos que <span class="math inline">\(X\)</span> y <span class="math inline">\(Y\)</span> son homeomorfos.</p>
+</div>
+<p>Toda propiedad que se preserve bajo funciones continuas es llamada <strong>propiedad topológica, o invariante topológico</strong>, esto es, si existe un homeomorfismo de <span class="math inline">\(X\)</span> a <span class="math inline">\(Y\)</span> , entonces tenemos los puntos de X en correspondencia biunívoca con los puntos de <span class="math inline">\(Y\)</span> , y los abiertos de <span class="math inline">\(X\)</span> en correspondencia biunívoca con los abiertos de <span class="math inline">\(Y\)</span> , en pocas palabras, un homeomorfismo sólo cambia las etiquetas de los objetos, pero mantiene intactas sus topologías.</p>
+<p>Intuitivamente, un homeomorfismo entre dos subespacios de <span class="math inline">\(\mathbb{R}\)</span>, <span class="math inline">\(\mathbb{R}^2\)</span>, y <span class="math inline">\(\mathbb{R}^3\)</span>es una forma de doblar, estirar, encojer, o curvar uno para llegar al otro, sin hacer cortes, ni pegar puntos.</p>
 
 <img src="./imagenes/logoazul.png" class="slide-logo r-stretch"><div class="footer footer-default">
 <p><a href=""></a></p>
