@@ -615,6 +615,45 @@ d_Y\left(\phi(x), \phi\left(x_0\right)\right)&lt;\varepsilon \quad \text { si } 
 </div>
 <p>Toda propiedad que se preserve bajo funciones continuas es llamada <strong>propiedad topológica, o invariante topológico</strong>, esto es, si existe un homeomorfismo de <span class="math inline">\(X\)</span> a <span class="math inline">\(Y\)</span> , entonces tenemos los puntos de X en correspondencia biunívoca con los puntos de <span class="math inline">\(Y\)</span> , y los abiertos de <span class="math inline">\(X\)</span> en correspondencia biunívoca con los abiertos de <span class="math inline">\(Y\)</span> , en pocas palabras, un homeomorfismo sólo cambia las etiquetas de los objetos, pero mantiene intactas sus topologías.</p>
 <p>Intuitivamente, un homeomorfismo entre dos subespacios de <span class="math inline">\(\mathbb{R}\)</span>, <span class="math inline">\(\mathbb{R}^2\)</span>, y <span class="math inline">\(\mathbb{R}^3\)</span>es una forma de doblar, estirar, encojer, o curvar uno para llegar al otro, sin hacer cortes, ni pegar puntos.</p>
+</section></section>
+<section>
+<section id="sucesiones" class="title-slide slide level1 smaller center">
+<h1>Sucesiones</h1>
+<p>Una sucesión es una función con dominio los números naturales, y contradominio en un espacio métrico.</p>
+</section>
+<section id="definiciones-1" class="slide level2 smaller">
+<h2>Definiciones</h2>
+<div class="def">
+<p>Una <strong>sucesión</strong> en un espacio métrico <span class="math inline">\(X=(X, d)\)</span> es una función <span class="math inline">\(\bar{x}: \mathbb{N} \rightarrow X\)</span>.</p>
+</div>
+<p>El valor de dicha función en <span class="math inline">\(k\)</span> se llama el <span class="math inline">\(k\)</span>-ésimo término de la sucesión y se denota por <span class="math inline">\(x_k:=\bar{x}(k)\)</span>. Una sucesión se suele denotar simplemente por <span class="math inline">\(\bar{x}=\left(x_k\right)\)</span>.</p>
+<p>Decimos que <span class="math inline">\(\left(x_k\right)\)</span> <strong>converge</strong> a un punto <span class="math inline">\(x \in X\)</span> si, dada <span class="math inline">\(\varepsilon&gt;0\)</span>, existe <span class="math inline">\(k_0 \in \mathbb{N}\)</span> tal que <span class="math inline">\(d\left(x_k, x\right)&lt;\varepsilon\)</span> para todo <span class="math inline">\(k \geq k_0\)</span>. El punto <span class="math inline">\(x\)</span> se llama el límite de la sucesión <span class="math inline">\(\left(x_k\right)\)</span>. Usaremos la notación <span class="math display">\[
+x_k \rightarrow x \text { en } X, \quad \text { o bien } \quad \lim _{k \rightarrow \infty} x_k=x
+\]</span> para decir que <span class="math inline">\(\left(x_k\right)\)</span> converge a <span class="math inline">\(x\)</span> en <span class="math inline">\(X\)</span>.</p>
+</section>
+<section id="definiciones-2" class="slide level2 smaller">
+<h2>Definiciones</h2>
+<div class="def">
+<p>Una <strong>subsucesión</strong> de <span class="math inline">\(\bar{x}=\left(x_k\right)\)</span> es la composición de <span class="math inline">\(\bar{x}\)</span> con una función estrictamente creciente <span class="math inline">\(k: \mathbb{N} \rightarrow \mathbb{N}\)</span>. Su <span class="math inline">\(j\)</span>-ésimo término se denota por <span class="math inline">\(x_{k_j}:=\bar{x}(k(j))\)</span>.</p>
+</div>
+<br>
+<div class="def">
+<p>Una sucesión <span class="math inline">\(\left(x_k\right)\)</span> en <span class="math inline">\(X\)</span> está acotada si existen <span class="math inline">\(x \in X\)</span> y <span class="math inline">\(c \in \mathbb{R}\)</span> tales que <span class="math inline">\(d\left(x_k, x\right) \leq c\)</span> para todo <span class="math inline">\(k \in \mathbb{N}\)</span>. Proposición 3.31. Toda sucesión convergente está acotada. &lt;/div’&gt;</p>
+</div></section>
+<section id="resultados-2" class="slide level2 smaller">
+<h2>Resultados</h2>
+<ol type="a">
+<li>El límite de una sucesión convergente es único.</li>
+<li>Si <span class="math inline">\(\left(x_k\right)\)</span> converge a <span class="math inline">\(x\)</span> en <span class="math inline">\(X\)</span> entonces cualquier subsucesión <span class="math inline">\(\left(x_{k_j}\right)\)</span> converge a <span class="math inline">\(x\)</span> en <span class="math inline">\(X\)</span>.</li>
+</ol>
+<p>Daremos ahora una caracterización de la cerradura de un conjunto en términos de sucesiones en dicho conjunto.</p>
+<div class="def">
+<p>Sea <span class="math inline">\(A\)</span> un subconjunto de <span class="math inline">\(X\)</span> y sea <span class="math inline">\(x \in X\)</span>. Entonces <span class="math inline">\(x \in \bar{A}\)</span> si y sólo si existe una sucesión <span class="math inline">\(\left(x_k\right)\)</span> tal que <span class="math inline">\(x_k \in A\)</span> para todo <span class="math inline">\(k \in \mathbb{N}\)</span> y <span class="math inline">\(x_k \rightarrow x\)</span> en <span class="math inline">\(X\)</span>.</p>
+</div>
+<p>Podemos caracterizar la continuidad de una función en términos de sucesiones como sigue.</p>
+<div class="def">
+<p><span class="math inline">\(\phi: X \rightarrow Y\)</span> es continua en el punto <span class="math inline">\(x \in X\)</span> si y sólo si para cualquier sucesión <span class="math inline">\(\left(x_k\right)\)</span> en <span class="math inline">\(X\)</span> tal que <span class="math inline">\(x_k \rightarrow x\)</span> en <span class="math inline">\(X\)</span> se cumple que <span class="math inline">\(\phi\left(x_k\right) \rightarrow \phi(x)\)</span> en <span class="math inline">\(Y\)</span>.</p>
+</div>
 
 <img src="./imagenes/logoazul.png" class="slide-logo r-stretch"><div class="footer footer-default">
 <p><a href=""></a></p>
